@@ -1,0 +1,40 @@
+body{
+  background-image:none;
+  background-size: cover;
+  scroll-behavior: smooth;
+}
+
+thead,td {
+  border: 1px solid var(--main-color);
+  width: 100px;
+  text-align: center;
+  font-weight: bold;
+}
+input {
+  width: 150px; 
+  margin-bottom: 15px;
+}
+
+label{
+  font-weight: bold;
+}
+
+input{
+  border: 2px solid  var(--hover-color);
+  border-radius: 5px;
+}
+
+.calculation .container .SFR .note {
+  display: none;
+  position: absolute;
+  top: 20%;
+  background-color: var(--main-color);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: 0.6s;
+}
+
+/* .calculation .container .SFR .note.show {
+  top: 20%;
+} */

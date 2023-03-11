@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculation info</title>
+    <link rel="stylesheet" href="css\all.min.css" />
+    <link rel="stylesheet" href="css\bootstrap.min.css" />
+    <link rel="stylesheet" href="css\main.css" />
+    <link rel="stylesheet" href="css/calculation.css">
+  </head>
+  <body>
+    <!-- start nav -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="file:///E:/programming/pro/index.html"
+          ><img class="rounded" src="Pic\logo.jpeg" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse text-end" id="navbarNav">
+          <ul class="navbar-nav ms-lg-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link me-3 fs-4 fw-bold active"
+                aria-current="page"
+                href="#Home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-3 fs-4 fw-bold" href="#System">System</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-3 fs-4 fw-bold" href="#Pricing">Calculation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-3 fs-4 fw-bold" href="#Gallary">Gallary</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-3 fs-4 fw-bold" href="#Contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="top-icon" id="top-icon"> <i class="fa-solid fa-arrow-up"></i> </div>
+    </div>
+    <!--  end nav -->
+    <!-- start calc -->
+    <div class="calculation mt-5">
+      <div class="container text-capitalize">
+        <h2 class="text-center position-relative mb-5 main-header">Aqua Equation</h2>
+        <div class="row d-flex justify-content-around mb-5">
+          <div class="col-lg-4 col-sm-12">
+            <form action="" id="fcr-equation" class=" fw-bold d-flex flex-column">
+              <h2>Food convertion rate</h2>
+              <!-- <input list="list" name="Fish-type" id="fish-list">
+              <datalist id ="list">
+                <option value="Tilapia">
+                <option value="Sea bass">
+                <option value="Sea Bream">
+                <option value="Mullet">
+                <option value="shrimp">
+                </datalist>
+                <hr> -->
+                <label for="sum-of-food"> Σ Feed </label>
+                <input type="number" name="" id="sum-of-food" placeholder="by Kg">
+                <label for="total-biomass">W<sub>1</sub> - W<sub>0</sub> </label>
+                <input type="number" name="" id="total-biomass" placeholder="by Kg">
+                <input type="button" value="Calc" id="FCRbut">
+                <label for="fcrtotal"> FCR</label>
+                <input type="number" name="" id="fcrtotal" >
+              </form>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+              <p>
+                <h2> Some Note</h2>
+                <ul>
+                  <li> Σ feed  : amout of food in time T<sub>1</sub> - T<sub>0</sub></li>
+                  <li>W<sub>1</sub> : total Biomass at T<sub>1</sub></li>
+                  <li>W<sub>0</sub> : total Biomass at T<sub>0</sub></li>
+                </ul>
+              </p>
+
+            </div>
+            <div class="sec col-lg-4 col-sm-12">
+            <h3 id="Fcr-text mb-2">You Can Check FCR from Table</h3>
+            <h5>FCR for most common fish in aquaculture </h5>
+            <table class="esp mt-4">
+              <thead>
+                <td >type</td>
+                <td>FCR</td>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Mullet</td>
+                  <td> 1.5</td>
+                </tr>
+                  <tr>
+                  <td>Sea Bass</td>
+                  <td> 1.8</td>
+                </tr>
+                <tr>
+                  <td>Sea Bream</td>
+                  <td> 1.8</td>
+                </tr>
+                <tr>
+                  <td>Shrimp</td>
+                  <td> 1.3</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="sgr row mb-5">
+          <form action="" class="d-flex flex-column justify-content-around col-lg-4 col-sm-12">
+            <h2>Stander Growth Rate</h2>
+            <label for="startW"> In W<sub>1</sub> - W<sub>0</sub></label>
+            <input type="number" name="" id="startW" placeholder="Kg"> 
+            <label for="Time"> T<sub>1</sub> - T<sub>0</sub></label>
+            <input type="number" name="" id="Time" placeholder="by Days">
+            <input type="button" value="Calc" id="SGRbtu">
+            <label for="SGr"> SGR</label>
+            <input type="number" name="" id="SGR">
+          </form>
+
+          <div class="SGR-info col-lg-4 col-sm-12" >
+            <p>
+              <h2>Some Note</h2>
+              <ul>
+                <li> W<sub>1</sub> : Fish BioMass At T<sub>1</sub></li>
+                <li> W<sub>0</sub> : Fish BioMass At T<sub>0</sub></li>
+                <li>T<sub>1</sub> - T<sub>0</sub> : Time by Days</li>
+              </ul>
+            </p>
+          </div>
+
+        </div>
+
+        <div class="SFR row mb-5">
+          <form action="" class="d-flex flex-column justify-content-around col-lg-4 col-sm-12">
+            <h2>Stander Feed Rate</h2>
+            <label for="startf"> In F<sub>1</sub> - F<sub>0</sub></label>
+            <input type="number" name="" id="startf" placeholder="Kg"> 
+            <label for="Timef"> T<sub>1</sub> - T<sub>0</sub></label>
+            <input type="number" name="" id="Timef" placeholder="by Days">
+            <input type="button" value="Calc" id="SFRbtu">
+            <label for="SFR"> SFR</label>
+            <input type="number" name="" id="SFR">
+          </form>
+
+          <div class="SGR-info col-lg-4 col-sm-12" >
+            <p>
+              <h2>Some Note</h2>
+              <ul>
+                <li> F<sub>1</sub> : Fish Feed At T<sub>1</sub></li>
+                <li> F<sub>0</sub> : Fish Feed At T<sub>0</sub></li>
+                <li>T<sub>1</sub> - T<sub>0</sub> : Time by Days</li>
+              </ul>
+            </p>
+          </div>
+
+          <div class="col-lg-4 col-sm-12  position-relative overflow-hidden " style="width:300px ; height: 300px;">
+            <Button id="more" class=" ms-5 mb-3 fw-bold"> Click </Button>
+            <p id="show" class="note fs-4">we can calculate (FCR) by Divided Stander Food Rete (SFR) On Stander Growth Rate (SGR) </p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <!-- end calc -->
+    <!-- footer start -->
+    <div class="footer mt-5" id="Contact">
+      <div class="container position-relative">
+        <h2 class="main-header esp text-center mb-5 position-relative">
+          Contact 
+        </h2>
+        <div class="box d-flex flex-row flex-wrap justify-content-around">
+          <div class="location text-center mt-3 mb-2" style="width: 18rem">
+            <h4 class="">Address</h4>
+            <a href=""> Shaka Kafr Elshekh Egypt </a>
+          </div>
+          <div class="soical mt-5 mb-5" style="width: 18rem">
+            <h4 class="text-center text-capitalize esp">our social media</h4>
+            <div class="icons-social d-flex justify-content-around">
+              <a class="fs-2 " href="https://m.facebook.com/100004063784705"><i class="fab fa-facebook-f"></i></a>
+              <a class="fs-2" href="tel:+0201090210860"><i class="fab fa-whatsapp"></i></a>
+              <a class="fs-2" href="mailto:anagemy.mg@gmail.com"><i class="fa-solid fa-message"></i></a>
+              <a class="fs-2 " href="https://www.linkedin.com/mwlite/in/mohamed-gamal-152180176"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="about text-center" style="width: 18rem">
+            <h4>About Us</h4>
+            <p class="text-capitalize">
+              we are aquaculture Specialist for any type of fish and water solution we provied a equipment for water parameter and all tests by tecnological devices 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer end -->
+    <script src="js\all.min.js"></script>
+    <script src="js\bootstrap.bundle.min.js"></script>
+    <script src="js\main.js"></script>
+    <script src="js\jquery-3.6.3.min.js"></script>
+    <script src="js\format.js"></script>
+  </body>
+</html>

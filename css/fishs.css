@@ -1,0 +1,9 @@
+a:hover{
+  color: rgb(199, 189, 189);
+}
+
+body{
+  background-image:none;
+  background-size: cover;
+  scroll-behavior: smooth;
+}
