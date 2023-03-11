@@ -148,6 +148,12 @@ h2.main-header:hover::after{
 .container .top-icon.shw{
   right: 1%;
 }
+.navbar-nav{
+	
+  justify-content:center;
+  align-items:end;
+} 
+
 /* Home */
 .Home{
   background: linear-gradient(to right,#4e4e4e 50%, #186099 100%);
